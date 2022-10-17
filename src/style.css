@@ -137,6 +137,22 @@ p {
   padding: 5px;
 }
 
+table p {
+  padding: 0 5px;
+}
+
+ul[role="meeting-list"] {
+  padding-inline-start: 40px;
+}
+
+i {
+  display: inline !important; /* fixes annoying margin issue with font-awesome */
+}
+
+strong {
+  font-weight: bold;
+}
+
 .rmit-logo {
   width: 150px;
 }
@@ -639,4 +655,8 @@ input:where([type="text"], [type="email"], ) {
 
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
+}
+
+.margin-bottom-400 {
+  margin-block-end: var(--size-400);
 }
