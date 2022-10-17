@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Assessment Task 2 Group # 9</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Assessment Task 2 Group # 9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- borrowed favicon from canvas lol -->
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://instructure-uploads-apse2.s3.ap-southeast-2.amazonaws.com/account_95950000000000001/attachments/25576945/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+  <script type="module" src="/main.js" defer></script>
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- borrowed from https://commons.wikimedia.org/wiki/File:RMIT_University_Logo.svg -->
+        <a href="#"><img src="/images/RMIT_University_Logo.svg" alt="RMIT" class="rmit-logo"> </a>
+        <!-- menu toggle. only visible in mobile -->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="/RMIT-IITA2">Team Profile</a></li>
+            <li><a href="/RMIT-IITA2/tools">Tools</a></li>
+            <li><a href="/RMIT-IITA2/industrydata">Industry Data</a></li>
+            <li><a href="/RMIT-IITA2/itwork">IT Work</a></li>
+            <li><a href="/RMIT-IITA2/ittechnologies">IT Technologies</a></li>
+            <li><a href="/RMIT-IITA2/projectidea">Project Idea</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="padding-block-700">
+      <div class="container">
+        <h1 class="fs-primary-heading fw-bold">Project Idea</h1>
+
+        <h2 class="fs-primary-heading margin-bottom-700">Barbell Motion Tracking App</h2>
+
+        <h3 class="fs-600 fw-bold">Overview</h3>
+        <p>My idea is to create a mobile app that uses the phones inbuilt camera to watch you while you do compound
+          lifts such as squats, bench-press or deadlifts.</p>
+        <p>In powerlifting, we often refer to lifts using a scale of difficulty called RPE (rating of perceived effort)
+          where zero would be us at rest, 5 might be something that
+          is somewhat difficult to lift, 7 being rather difficult, 9 being very difficult and 10 being our absolute
+          maximum weight lift.</p>
+        <p>This is a scale that goes by feel, but it can also be interpreted with ease by a third party based on how
+          fast the bar moves from the top of the lift to the bottom,
+          then back up again. For example: If a squat with average weight takes 1 second down then 1.5 seconds up, but a
+          very heavy lift takes 1 second down and 3 seconds up
+          and comes close to stopping before the top, it would arguably be an RPE 9-10 lift.</p>
+        <p>This system works pretty well to get an idea of how difficult a training plan is, but provides no real data
+          that can be analysed for real insight into your
+          performance.</p>
+        <p>This app would use real time image recognition software to find the centre of mass of the barbell from a side
+          perspective and then track and graph the motion of the
+          bar over time, storing and later comparing the data from many individual lifts over many weeks. The user would
+          only need to specify which lift is being performed and
+          at what weight.</p>
+
+        <h3 class="fs-600 fw-bold">Motivation</h3>
+        <p>Powerlifting is a passion of mine and the idea of using technology to help with my performance is something
+          that really fascinates me. I regularly take personal
+          training sessions with my coach to increase my strength and most of our performance over time is tracked by
+          doing a session of max lifts, then training over several
+          weeks and later doing more max lifts and comparing them.</p>
+        <p>The trouble with this is that I very much rely on my coach. When I train at the gym without him there, he
+          relies on my ability to track what RPE my heaviest lifts
+          were to gauge how much to increase my weight week by week.</p>
+
+        <h3 class="fs-600 fw-bold">Description</h3>
+        <p>A new user would create an account where they input statistics such as their weight and height and what their
+          current max squat, bench-press and deadlift lifts are.
+          From there they would input a workout plan which includes some of these compound lifts.</p>
+        <p>Each time the user goes to the gym, they clip their phone into a stand and open up the app. They would select
+          their workout plan, select the day of the workout they
+          will be completing and get started.<br />As they progress through the lifts they will click record on the app,
+          go to the rack and perform the lift, then click end
+          recording.</p>
+        <p>Each lift will provide real time statistics on the travel path of the bar, the speed, the timing and whether
+          your upward motion stopped at all along the way. This
+          would be done with each consecutive lift, and at the end this data would be stored as a set for that
+          particular day. Users might even be interested in reporting
+          whether they were feeling energised or maybe sluggish that day to indicate to the app that they weren’t at
+          peak performance. This is something we take into account
+          with our RPE evaluation of a lift.</p>
+        <p>Once the user has completed many days’ worth of this with each of the compound movements the app would
+          provide many forms of graphs and statistical analysis to
+          provide the user with insight into their current performance and maybe even tips on what they need to focus on
+          and what is progressing well.</p>
+
+        <h3 class="fs-600 fw-bold">Tools and Technologies</h3>
+        <p>The implementation could be as simple as an app with local storage, but servers with databases should be
+          strongly considered as the majority of users will wish to
+          share their stats with friends or user their same account across multiple devices. </p>
+        <p>Xamarin is a great example of a framework that could be used to create an app that would be compatible with
+          both Android and apple devices. It’s a reliable product
+          provided by Microsoft and leverages .Net and C# which are very common and easy to learn programming languages.
+        </p>
+        <p>The image tracking can likely leverage an online service initially while the app is in development but later
+          on it would be ideal to write our own image tracking
+          software that can run locally on each device.</p>
+
+        <h3 class="fs-600 fw-bold">Skills Required</h3>
+        <p>Skills required would include Xamarin and .Net Framework development in C# for the mobile app.<br />An
+          understanding of how to write API’s backed by databases in SQL
+          will be required for the cloud/backend aspects of the project.</p>
+        <p>I am quite familiar with the .Net Framework in C# as well as SQL so these would be ideal technologies for me
+          to make use of.</p>
+
+        <h3 class="fs-600 fw-bold">Outcome</h3>
+        <p>This project will hopefully allow coaches and athletes to take a more data driven approach with benefits
+          spanning many areas from strength gains to safety lifting
+          technique.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="primary-footer padding-block-700 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <div>
+            <a href="#"><img src="/images/RMIT_University_Logo_Inverted.svg" alt="RMIT"
+                class="rmit-logo footer-rmit-logo"> </a>
+          </div>
+          <br />
+          <p>Intro to IT Assessment 2 Group # 9</p>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+              <li><a href="/RMIT-IITA2">Team Profile</a></li>
+              <li><a href="/RMIT-IITA2/tools">Tools</a></li>
+              <li><a href="/RMIT-IITA2/industrydata">Industry Data</a></li>
+              <li><a href="/RMIT-IITA2/itwork">IT Work</a></li>
+              <li><a href="/RMIT-IITA2/ittechnologies">IT Technologies</a></li>
+              <li><a href="/RMIT-IITA2/projectidea">Project Idea</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="primary-footer-form">
+          <!-- dummy form -->
+          <form action="">
+            <input type="email" placeholder="Updates in your inbox">
+            <button class="button" data-shadow="none">Go</button>
+          </form>
+          <br />
+          <div class="text-center-sm">
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/kvines4/RMIT-IITA2">Check out the git repo here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
