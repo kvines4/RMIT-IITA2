@@ -18,7 +18,7 @@
   <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
   
   <script type="module" crossorigin src="/RMIT-IITA2/assets/main.18edea72.js"></script>
-  <link rel="stylesheet" href="/RMIT-IITA2/assets/main.b33afae4.css">
+  <link rel="stylesheet" href="/RMIT-IITA2/assets/main.e0ec7761.css">
 </head>
 
 <body>
@@ -47,87 +47,97 @@
 
   <main>
 
-    <section class="padding-block-700">
+    <section class="padding-block-500">
       <div class="container">
-        <h1 class="fs-primary-heading fw-bold">Project Idea</h1>
-
-        <h2 class="fs-primary-heading margin-bottom-700">Barbell Motion Tracking App</h2>
-
+        <h1 class="fs-primary-heading fw-bold margin-bottom-400">Project Idea</h1>
+        <h2 class="fs-secondary-heading margin-bottom-400">Barbell Motion Tracking App</h2>
         <h3 class="fs-600 fw-bold">Overview</h3>
         <p>My idea is to create a mobile app that uses the phones inbuilt camera to watch you while you do compound
-          lifts such as squats, bench-press or deadlifts.</p>
-        <p>In powerlifting, we often refer to lifts using a scale of difficulty called RPE (rating of perceived effort)
+          lifts such as squats, bench-press or deadlifts.<br />
+          In powerlifting, we often refer to lifts using a scale of difficulty called RPE (rating of perceived effort)
           where zero would be us at rest, 5 might be something that
           is somewhat difficult to lift, 7 being rather difficult, 9 being very difficult and 10 being our absolute
-          maximum weight lift.</p>
-        <p>This is a scale that goes by feel, but it can also be interpreted with ease by a third party based on how
+          maximum weight lift.<br />
+          This is a scale that goes by feel, but it can also be interpreted with ease by a third party based on how
           fast the bar moves from the top of the lift to the bottom,
           then back up again. For example: If a squat with average weight takes 1 second down then 1.5 seconds up, but a
           very heavy lift takes 1 second down and 3 seconds up
-          and comes close to stopping before the top, it would arguably be an RPE 9-10 lift.</p>
-        <p>This system works pretty well to get an idea of how difficult a training plan is, but provides no real data
+          and comes close to stopping before the top, it would arguably be an RPE 9-10 lift.<br />
+          This system works pretty well to get an idea of how difficult a training plan is, but provides no real data
           that can be analysed for real insight into your
-          performance.</p>
-        <p>This app would use real time image recognition software to find the centre of mass of the barbell from a side
+          performance.<br />
+          This app would use real time image recognition software to find the centre of mass of the barbell from a side
           perspective and then track and graph the motion of the
           bar over time, storing and later comparing the data from many individual lifts over many weeks. The user would
           only need to specify which lift is being performed and
           at what weight.</p>
-
         <h3 class="fs-600 fw-bold">Motivation</h3>
         <p>Powerlifting is a passion of mine and the idea of using technology to help with my performance is something
           that really fascinates me. I regularly take personal
           training sessions with my coach to increase my strength and most of our performance over time is tracked by
           doing a session of max lifts, then training over several
-          weeks and later doing more max lifts and comparing them.</p>
-        <p>The trouble with this is that I very much rely on my coach. When I train at the gym without him there, he
+          weeks and later doing more max lifts and comparing them.<br />
+          The trouble with this is that I very much rely on my coach. When I train at the gym without him there, he
           relies on my ability to track what RPE my heaviest lifts
           were to gauge how much to increase my weight week by week.</p>
-
         <h3 class="fs-600 fw-bold">Description</h3>
-        <p>A new user would create an account where they input statistics such as their weight and height and what their
-          current max squat, bench-press and deadlift lifts are.
-          From there they would input a workout plan which includes some of these compound lifts.</p>
-        <p>Each time the user goes to the gym, they clip their phone into a stand and open up the app. They would select
-          their workout plan, select the day of the workout they
-          will be completing and get started.<br />As they progress through the lifts they will click record on the app,
-          go to the rack and perform the lift, then click end
-          recording.</p>
-        <p>Each lift will provide real time statistics on the travel path of the bar, the speed, the timing and whether
-          your upward motion stopped at all along the way. This
-          would be done with each consecutive lift, and at the end this data would be stored as a set for that
-          particular day. Users might even be interested in reporting
-          whether they were feeling energised or maybe sluggish that day to indicate to the app that they weren’t at
-          peak performance. This is something we take into account
-          with our RPE evaluation of a lift.</p>
-        <p>Once the user has completed many days’ worth of this with each of the compound movements the app would
-          provide many forms of graphs and statistical analysis to
-          provide the user with insight into their current performance and maybe even tips on what they need to focus on
-          and what is progressing well.</p>
-
+        <p>Upon account creation, the user will input their weight and height, and their current max, average sets/reps
+          statistics for a range of supported exercises such as squat, bench-press, deadlift lift. The only other optional thing
+          that the user could input into the app is their workout plan which includes some of these compound lifts.<br />
+          The app will be very simplistic and UX focused, when doing a workout that the user wants to check their form on they
+          will simply have to prop their phone so that the camera is facing them, click start on the app, perform the workout
+          and click stop. After they are finished the app will playback their recording but with a stick figure overlay that
+          will show whether they had the correct form when performing the exercise, the stick figure will be red when incorrect
+          form is being used, yellow when in a margin of error then green for a successful exercise.<br />
+          The user will also be presented with a series of statistics on top of the path of travel of their form. These
+          statistics could include the speed or timing in-between each repetition of the exercise and whether your upward motion
+          stopped at all along the way. Over time after the user has utilised the app over an extended period of time, the app
+          will then be able provide a range of graphs and statistical analysis including averages and suggestions for
+          improvements to provide the user with their current performance and how they are tracking towards their goals.<br />
+          This would be done with each consecutive lift, and at the end this data would be stored as a set for that particular
+          day.<br />
+          As a way of balancing out statistics, users can choose to report how they think their workout went on a scale (ie 5
+          for energised and pumped or 1 for sluggish) to help the app cater for off days so that it doesn’t count towards their
+          peak performance profile. </p>
         <h3 class="fs-600 fw-bold">Tools and Technologies</h3>
         <p>The implementation could be as simple as an app with local storage, but servers with databases should be
           strongly considered as the majority of users will wish to
-          share their stats with friends or user their same account across multiple devices. </p>
-        <p>Xamarin is a great example of a framework that could be used to create an app that would be compatible with
+          share their stats with friends or user their same account across multiple devices.<br />
+          Xamarin is a great example of a framework that could be used to create an app that would be compatible with
           both Android and apple devices. It’s a reliable product
-          provided by Microsoft and leverages .Net and C# which are very common and easy to learn programming languages.
-        </p>
-        <p>The image tracking can likely leverage an online service initially while the app is in development but later
+          provided by Microsoft and leverages .Net and C# which are very common and easy to learn programming languages.<br />
+          The image tracking can likely leverage an online service initially while the app is in development but later
           on it would be ideal to write our own image tracking
           software that can run locally on each device.</p>
-
+        <h3 class="fs-600 fw-bold">Foreseeable Challenges</h3>
+        <p><br /></p>
         <h3 class="fs-600 fw-bold">Skills Required</h3>
         <p>Skills required would include Xamarin and .Net Framework development in C# for the mobile app.<br />An
           understanding of how to write API’s backed by databases in SQL
-          will be required for the cloud/backend aspects of the project.</p>
-        <p>I am quite familiar with the .Net Framework in C# as well as SQL so these would be ideal technologies for me
+          will be required for the cloud/backend aspects of the project.<br />
+          >I am quite familiar with the .Net Framework in C# as well as SQL so these would be ideal technologies for me
           to make use of.</p>
-
         <h3 class="fs-600 fw-bold">Outcome</h3>
-        <p>This project will hopefully allow coaches and athletes to take a more data driven approach with benefits
-          spanning many areas from strength gains to safety lifting
-          technique.</p>
+        <p>As people are becoming more health conscious along with the frequency of people exercising and attending the gym, we
+          would like our product to help them achieve their goals and make sure safe techniques are being undertaken. Whether it
+          be an athlete trying to train optimally to get the most out of their workout using the data collected through our
+          product or a regular person attending the gym just making sure they are exercising safely and efficiently using the
+          motion tracking, we hope to offer a product that helps a diverse range of people reach their health goals. In short,
+          this project would allow coaches, athletes and everyday people to approach exercise more informed, allowing them to
+          reach their goals in a more efficient and safe way. </p>
+        <h3 class="fs-600 fw-bold">Future Upgrades</h3>
+        <p>In the first few updates, we would see bug fixes and improvements made to the user interface design of the
+          application and any other small details that users believe would benefit the application. After 6-12 months, we would
+          see more features added to the application, such as a set/rep counter. The application will also be able to suggest
+          either increasing or decreasing weight from an exercise depending on how long it takes the user to complete the
+          exercise.<br />
+          After a year of being online, more features will be available in the application, such as alerting the user about
+          their form and exercise intensity. This will be done through cross-platform capabilities, where the application can
+          link to a smartwatch and access information such as blood-oxygen levels and heart rate.<br />
+          The final features will let the application provide users with a workout plan and meal plan, depending on whether the
+          user would like to gain or lose weight. The application will also have a database of many foods and their breakdown of
+          calories, sugars, fats etc. All the user will have to do is enter the food name in the database, find it, and add it
+          to their meal plan to be able to view a breakdown. </p>
       </div>
     </section>
 
