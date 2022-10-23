@@ -30,7 +30,7 @@
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
-          <ul aria-label="Primary" role="list" class="nav-list">
+          <ul aria-label="Primary" role="nav-list" class="nav-list">
             <li><a href="/RMIT-IITA2">Team Profile</a></li>
             <li><a href="/RMIT-IITA2/tools">Tools</a></li>
             <li><a href="/RMIT-IITA2/industrydata">Industry Data</a></li>
@@ -50,34 +50,43 @@
         <h1 class="fs-primary-heading fw-bold margin-bottom-400">Project Idea</h1>
         <h2 class="fs-secondary-heading margin-bottom-400">Barbell Motion Tracking App</h2>
         <h3 class="fs-600 fw-bold">Overview</h3>
-        <p>My idea is to create a mobile app that uses the phones inbuilt camera to watch you while you do compound
-          lifts such as squats, bench-press or deadlifts.<br />
-          In powerlifting, we often refer to lifts using a scale of difficulty called RPE (rating of perceived effort)
-          where zero would be us at rest, 5 might be something that
-          is somewhat difficult to lift, 7 being rather difficult, 9 being very difficult and 10 being our absolute
-          maximum weight lift.<br />
-          This is a scale that goes by feel, but it can also be interpreted with ease by a third party based on how
-          fast the bar moves from the top of the lift to the bottom,
-          then back up again. For example: If a squat with average weight takes 1 second down then 1.5 seconds up, but a
-          very heavy lift takes 1 second down and 3 seconds up
-          and comes close to stopping before the top, it would arguably be an RPE 9-10 lift.<br />
-          This system works pretty well to get an idea of how difficult a training plan is, but provides no real data
-          that can be analysed for real insight into your
-          performance.<br />
-          This app would use real time image recognition software to find the centre of mass of the barbell from a side
-          perspective and then track and graph the motion of the
-          bar over time, storing and later comparing the data from many individual lifts over many weeks. The user would
-          only need to specify which lift is being performed and
-          at what weight.</p>
+        <p>Our idea is to create a fitness/strength training focused mobile app that will use your phone’s inbuilt
+          camera to
+          watch you while you do compound lifts such as squats, bench-press or deadlifts and analyse your lifting
+          form.<br />
+          In powerlifting, we often analyse effort/performance with lifts using a scale of difficulty called RPE (rating
+          of
+          perceived effort) where zero would be us at rest, 5 might be difficult to lift, 7 being rather difficult, 9
+          being
+          exceedingly difficult and 10 being our absolute maximum weight lift.<br />
+          The RPE scale is one that goes by feel, but it can also be interpreted with ease by an experienced third party
+          based
+          on how fast the bar moves from the top of the lift to the bottom, then back up again. For example: If a squat
+          with
+          average weight takes 1 second down then 1.5 seconds up, but a very heavy lift takes 1 second down and 3
+          seconds up and
+          comes close to stopping before the top, it would be an RPE 9-10 lift.<br />
+          This system works well for indicating to your coach how difficult a training plan or training day is but
+          provides no
+          real data that can be analysed for insight into your overall performance.<br />
+          This app would use real time image recognition software to track information about effort exerted in each
+          individual
+          lift, but would also be able to provide insight into factors such as the centre of mass of the barbell and its
+          motion
+          over time, your body proportions such has how far you are leaning forward, and how deep your lift is with the
+          intention of providing information on how safe your posture is.
+          Server side processing will be used for all information gathering and then displayed locally on the app on
+          your
+          personal device.</p>
         <h3 class="fs-600 fw-bold">Motivation</h3>
-        <p>Powerlifting is a passion of mine and the idea of using technology to help with my performance is something
-          that really fascinates me. I regularly take personal
-          training sessions with my coach to increase my strength and most of our performance over time is tracked by
-          doing a session of max lifts, then training over several
-          weeks and later doing more max lifts and comparing them.<br />
-          The trouble with this is that I very much rely on my coach. When I train at the gym without him there, he
-          relies on my ability to track what RPE my heaviest lifts
-          were to gauge how much to increase my weight week by week.</p>
+        <p>This app would be useful for a lot of people, as gym is a very popular hobby nowadays. The app would help
+          people train safely which would result in reduced gym-related injuries. When performed correctly, users will
+          also get more out of their workouts and improve their performance at the gym, which will lead to increased
+          strength. Performance over time is tracked by doing a session of max lifts, and then in a few weeks time the
+          user can repeat the max lifts and compare results. The app will also benefit users who train by themselves as
+          they can’t always rely on a coach. When the user exercises at the gym without a coach, the coach relies on the
+          users ability to track what RPE the users heaviest lifts were to gauge the requirement to increase the weight
+          each week. </p>
         <h3 class="fs-600 fw-bold">Description</h3>
         <p>Upon account creation, the user will input their weight and height, and their current max, average sets/reps
           statistics for a range of supported exercises such as squat, bench-press, deadlift lift. The only other optional thing
@@ -98,23 +107,39 @@
           for energised and pumped or 1 for sluggish) to help the app cater for off days so that it doesn’t count towards their
           peak performance profile. </p>
         <h3 class="fs-600 fw-bold">Tools and Technologies</h3>
-        <p>The implementation could be as simple as an app with local storage, but servers with databases should be
-          strongly considered as the majority of users will wish to
-          share their stats with friends or user their same account across multiple devices.<br />
-          Xamarin is a great example of a framework that could be used to create an app that would be compatible with
-          both Android and apple devices. It’s a reliable product
-          provided by Microsoft and leverages .Net and C# which are very common and easy to learn programming languages.<br />
-          The image tracking can likely leverage an online service initially while the app is in development but later
-          on it would be ideal to write our own image tracking
-          software that can run locally on each device.</p>
+        <p>Xamarin is a great example of a framework that could be used to create an app that would be compatible with both
+          Android and Apple devices. It’s a reliable product provided by Microsoft and leverages .Net and C# which are very
+          common and easy to learn programming languages and are skills that are very easy to find in the workforce which help
+          with the process of hiring developers for the team.<br />
+          The app would run locally on the user’s device and make use of the inbuild camera technology. Video will be recorded
+          locally on the device, but compressed and sent to servers for processing.<br />
+          On the server side of things, we would be making use of Google’s ML kit which is a light weight computer vision api
+          that is designed for tracking the movement of the human body. Once video processing is complete, we need to analyse
+          the data and compare it to previous datasets. Microsoft’s’ Azure platform provides a service known as Azure Data
+          Explorer which can be used for instant visibility into very large raw datasets with near real-time analysis for
+          identifying performance, trends and anomalies.<br />
+          This information would then be streamed back to the user’s device for comparison on their end locally. We would then
+          provide graphing and diagrams to help the user to understand many lifting factors such as where their centre of mass
+          is compared to the actual path of the barbell, how their pacing was compared to previous and subsequent lifts, and
+          projections of their future progress based on current data. </p>
         <h3 class="fs-600 fw-bold">Foreseeable Challenges</h3>
-        <p><br /></p>
+        <p>When developing the application there will be challenges that need to be investigated. Overall, they can be
+          categorised into hardware, software, environment, and business-related challenges.<br />
+          Hardware on different phones varies, the processing power and cameras on devices can cause problems when running close
+          to the limits of processing power. As application will be running for a while battery drainage is another issue that
+          might cause problems in situations when devices must find network in low network coverage areas.<br />
+          When application is used in the gym there are also other persons there that will influence phones focusing
+          capabilities, like when someone walks pass and barbell is not seen by the application.<br />
+          Like with every project funding is particularly important and without sufficient funding and marketing the research is
+          not possible making the whole build impossible </p>
         <h3 class="fs-600 fw-bold">Skills Required</h3>
-        <p>Skills required would include Xamarin and .Net Framework development in C# for the mobile app.<br />An
-          understanding of how to write API’s backed by databases in SQL
-          will be required for the cloud/backend aspects of the project.<br />
-          >I am quite familiar with the .Net Framework in C# as well as SQL so these would be ideal technologies for me
-          to make use of.</p>
+        <p>Building the application will require wide range of information technology skills, from data management to UX design
+          skills. A good understanding of writing API-s for backend backed by databases in SQL will be required for the cloud
+          part of the build.<br />
+          Good programming skills to write efficient code for the application and collaborative skills using Git software for
+          collaborative work. Knowledge of cloud infrastructure developing frameworks and which cloud computing service to use
+          is required to have a application that utilises AI with image recognition solutions.<br />
+          Bringing the backend and frontend together with a user-friendly mobile application requires UX design skills </p>
         <h3 class="fs-600 fw-bold">Outcome</h3>
         <p>As people are becoming more health conscious along with the frequency of people exercising and attending the gym, we
           would like our product to help them achieve their goals and make sure safe techniques are being undertaken. Whether it
@@ -146,13 +171,14 @@
       <div class="even-columns">
         <div>
           <div class="margin-bottom-400">
-            <a href="#"><img src="/images/RMIT_University_Logo_Inverted.svg" alt="RMIT" class="rmit-logo footer-rmit-logo"></a>
+            <a href="#"><img src="/images/RMIT_University_Logo_Inverted.svg" alt="RMIT"
+                class="rmit-logo footer-rmit-logo"></a>
           </div>
           <p>Intro to IT Assessment 2 Group # 9</p>
         </div>
         <div>
           <nav class="footer-nav">
-            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="nav-list">
               <li><a href="/RMIT-IITA2">Team Profile</a></li>
               <li><a href="/RMIT-IITA2/tools">Tools</a></li>
               <li><a href="/RMIT-IITA2/industrydata">Industry Data</a></li>

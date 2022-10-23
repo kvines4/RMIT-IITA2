@@ -74,12 +74,6 @@
   font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -141,7 +135,11 @@ table p {
   padding: 0 5px;
 }
 
-ul[role="meeting-list"] {
+ul[role="nav-list"] {
+  list-style: none;
+}
+
+ul[role="list"] {
   padding-inline-start: 40px;
 }
 
@@ -552,7 +550,11 @@ input:where([type="text"], [type="email"], ) {
   }
 }
 
-:where(.flow :not(:first-child)) {
+:where(.flow :not(:first-child) ul) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+:where(.flow-list :not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
 
