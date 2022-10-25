@@ -50,43 +50,31 @@
         <h1 class="fs-primary-heading fw-bold margin-bottom-400">Project Idea</h1>
         <h2 class="fs-secondary-heading margin-bottom-400">Barbell Motion Tracking App</h2>
         <h3 class="fs-600 fw-bold">Overview</h3>
-        <p>Our idea is to create a fitness/strength training focused mobile app that will use your phone’s inbuilt
-          camera to
-          watch you while you do compound lifts such as squats, bench-press or deadlifts and analyse your lifting
-          form.<br />
-          In powerlifting, we often analyse effort/performance with lifts using a scale of difficulty called RPE (rating
-          of
-          perceived effort) where zero would be us at rest, 5 might be difficult to lift, 7 being rather difficult, 9
-          being
-          exceedingly difficult and 10 being our absolute maximum weight lift.<br />
-          The RPE scale is one that goes by feel, but it can also be interpreted with ease by an experienced third party
-          based
-          on how fast the bar moves from the top of the lift to the bottom, then back up again. For example: If a squat
-          with
-          average weight takes 1 second down then 1.5 seconds up, but a very heavy lift takes 1 second down and 3
-          seconds up and
-          comes close to stopping before the top, it would be an RPE 9-10 lift.<br />
-          This system works well for indicating to your coach how difficult a training plan or training day is but
-          provides no
-          real data that can be analysed for insight into your overall performance.<br />
-          This app would use real time image recognition software to track information about effort exerted in each
-          individual
-          lift, but would also be able to provide insight into factors such as the centre of mass of the barbell and its
-          motion
-          over time, your body proportions such has how far you are leaning forward, and how deep your lift is with the
-          intention of providing information on how safe your posture is.
-          Server side processing will be used for all information gathering and then displayed locally on the app on
-          your
-          personal device.</p>
+        <p>Our idea is to create a fitness/strength training focused mobile app that will use your phone's built-in camera
+          to watch you do compound lifts such as squats, bench-press or deadlifts and analyse your lifting form.</p>
+        <p>In powerlifting, we often analyse effort/performance with lifts using a scale of difficulty called RPE (rating
+          of perceived effort) where zero would be us at rest, 5 might be difficult to lift, 7 being rather difficult, 9 being
+          exceedingly difficult and 10 being our absolute maximum weight lift.</p>
+        <p>The RPE scale goes by feel, but it can also be interpreted with ease by an experienced third party based on how
+          fast the bar moves from the top of the lift to the bottom, then back up again. For example: If a squat with average
+          weight takes 1 second down and 1.5 seconds up, but a big lift takes 1 second down and 3 seconds up and comes close to
+          stopping before the top, it would be an RPE 9-10 lift.</p>
+        <p>This system indicates to your coach how difficult a training plan or training day is but provides no real data that
+          can be analysed for insight into your overall performance.</p>
+        <p>This app would use real-time image recognition software to track information about effort exerted in each lift, but
+          would also be able to provide insight into factors such as the centre of mass of the barbell and its motion over time,
+          your body proportions such as how far you are leaning forward, and how deep your lift is, with the intention of
+          providing information on how safe your posture is.</p>
+        <p>Server-side processing will be used for all information gathering and then displayed locally on the app on your
+          device.</p>
         <h3 class="fs-600 fw-bold">Motivation</h3>
-        <p>This app would be useful for a lot of people, as gym is a very popular hobby nowadays. The app would help
-          people train safely which would result in reduced gym-related injuries. When performed correctly, users will
-          also get more out of their workouts and improve their performance at the gym, which will lead to increased
-          strength. Performance over time is tracked by doing a session of max lifts, and then in a few weeks time the
-          user can repeat the max lifts and compare results. The app will also benefit users who train by themselves as
-          they can’t always rely on a coach. When the user exercises at the gym without a coach, the coach relies on the
-          users ability to track what RPE the users heaviest lifts were to gauge the requirement to increase the weight
-          each week. </p>
+        <p>This app would be helpful for many people, as the gym is a trendy hobby nowadays. The app would help people train
+          users safely, which would result in reduced gym-related injuries. When performed correctly, users will also get more
+          out of their workouts and improve their performance at the gym, which will lead to increased strength. Performance
+          over time is tracked by doing a session of max lifts, and then in a few weeks' time, the user can repeat the max
+          lifts and compare results. The app will also benefit users who train by themselves as they can't always rely on
+          a coach. When the user exercises at the gym without a coach, the coach relies on the user's ability to track
+          what RPE the users heaviest lifts were to gauge the requirement to increase the weight each week.</p>
         <h3 class="fs-600 fw-bold">Description</h3>
         <p>Upon account creation, the user will input their weight and height, and their current max, average sets/reps
           statistics for a range of supported exercises such as squat, bench-press, deadlift lift. The only other optional thing
@@ -107,60 +95,60 @@
           for energised and pumped or 1 for sluggish) to help the app cater for off days so that it doesn’t count towards their
           peak performance profile. </p>
         <h3 class="fs-600 fw-bold">Tools and Technologies</h3>
-        <p>Xamarin is a great example of a framework that could be used to create an app that would be compatible with both
-          Android and Apple devices. It’s a reliable product provided by Microsoft and leverages .Net and C# which are very
-          common and easy to learn programming languages and are skills that are very easy to find in the workforce which help
-          with the process of hiring developers for the team.<br />
-          The app would run locally on the user’s device and make use of the inbuild camera technology. Video will be recorded
-          locally on the device, but compressed and sent to servers for processing.<br />
-          On the server side of things, we would be making use of Google’s ML kit which is a light weight computer vision api
-          that is designed for tracking the movement of the human body. Once video processing is complete, we need to analyse
-          the data and compare it to previous datasets. Microsoft’s’ Azure platform provides a service known as Azure Data
-          Explorer which can be used for instant visibility into very large raw datasets with near real-time analysis for
-          identifying performance, trends and anomalies.<br />
-          This information would then be streamed back to the user’s device for comparison on their end locally. We would then
-          provide graphing and diagrams to help the user to understand many lifting factors such as where their centre of mass
-          is compared to the actual path of the barbell, how their pacing was compared to previous and subsequent lifts, and
-          projections of their future progress based on current data. </p>
+        <p>Xamarin is an excellent example of a framework that could be used to create an app that would be compatible with both
+          Android and Apple devices. It is a reliable product provided by Microsoft and leverages .Net and C#, which are very
+          common and easy-to-learn programming languages and are skills that are very easy to find in the workforce, which help
+          with the process of hiring developers for the team.</p>
+        <p>The app would run locally on the user's device and use the inbuild camera technology. Video will be
+          recorded locally on the device but compressed and sent to servers for processing.</p>
+        <p>Once video processing is complete, we need to analyse and compare the data to previous datasets. On the server
+          side of things, we would be making use of Google's ML kit, which is a lightweight computer vision API that is
+          designed for tracking the movement of the human body. Microsoft's Azure platform provides a service known as Azure
+          Data Explorer, which can be used for instant visibility into very large raw datasets with near real-time analysis for
+          identifying performance, trends and anomalies.</p>
+        <p>This information would then be streamed back to the user's device for comparison on their end locally. We
+          would then provide graphing and diagrams to help the user to understand many lifting factors such as where their
+          centre of mass is compared to the actual path of the barbell, how their pacing was compared to previous and subsequent
+          lifts, and projections of their future progress based on current data.</p>
         <h3 class="fs-600 fw-bold">Foreseeable Challenges</h3>
-        <p>When developing the application there will be challenges that need to be investigated. Overall, they can be
-          categorised into hardware, software, environment, and business-related challenges.<br />
-          Hardware on different phones varies, the processing power and cameras on devices can cause problems when running close
-          to the limits of processing power. As application will be running for a while battery drainage is another issue that
-          might cause problems in situations when devices must find network in low network coverage areas.<br />
-          When application is used in the gym there are also other persons there that will influence phones focusing
-          capabilities, like when someone walks pass and barbell is not seen by the application.<br />
-          Like with every project funding is particularly important and without sufficient funding and marketing the research is
-          not possible making the whole build impossible </p>
+        <p>When developing the application, challenges will need to be investigated. These challenges can be categorised into
+          hardware, software, environment, and business-related challenges.</p>
+        <p>Hardware on different phones varies, as the processing power and cameras on devices can cause problems when running
+          close to the processing power limits. As the application will be running for a while, battery drainage is another
+          issue that might cause problems in situations when devices must find a network in low-network coverage areas.</p>
+        <p>When the application is used in the gym, other people will also influence the phone's focusing capabilities, for
+          example, when someone walks past and the application does not see the barbell.</p>
+        <p>Like with every project, funding is essential, and without sufficient funding and marketing, the research is
+          impossible, making the whole build impossible.</p>
         <h3 class="fs-600 fw-bold">Skills Required</h3>
-        <p>Building the application will require wide range of information technology skills, from data management to UX design
-          skills. A good understanding of writing API-s for backend backed by databases in SQL will be required for the cloud
-          part of the build.<br />
-          Good programming skills to write efficient code for the application and collaborative skills using Git software for
+        <p>Building the application will require a wide range of information technology skills, from data management to UX
+          design skills. A good understanding of writing API-s for the backend backed by databases in SQL will be required for
+          the cloud part of the build.</p>
+        <p>Good programming skills to write efficient code for the application and collaborative skills using Git software for
           collaborative work. Knowledge of cloud infrastructure developing frameworks and which cloud computing service to use
-          is required to have a application that utilises AI with image recognition solutions.<br />
-          Bringing the backend and frontend together with a user-friendly mobile application requires UX design skills </p>
+          is required to have an application that utilises AI with image recognition solutions.</p>
+        <p>Bringing the backend and frontend together with a user-friendly mobile application requires UX design skills</p>
         <h3 class="fs-600 fw-bold">Outcome</h3>
         <p>As people are becoming more health conscious along with the frequency of people exercising and attending the gym, we
-          would like our product to help them achieve their goals and make sure safe techniques are being undertaken. Whether it
-          be an athlete trying to train optimally to get the most out of their workout using the data collected through our
-          product or a regular person attending the gym just making sure they are exercising safely and efficiently using the
-          motion tracking, we hope to offer a product that helps a diverse range of people reach their health goals. In short,
-          this project would allow coaches, athletes and everyday people to approach exercise more informed, allowing them to
-          reach their goals in a more efficient and safe way. </p>
+          would like our product to help them achieve their goals and ensure safe techniques are being undertaken. Whether it be
+          an athlete trying to train optimally to get the most out of their workout using the data collected through our product
+          or a regular person attending the gym just to make sure they are exercising safely and efficiently using the motion
+          tracking, we hope to offer a product that helps a diverse range of people reach their health goals. In short, this
+          project would allow coaches, athletes and everyday people to approach exercise more informed, allowing them to reach
+          their goals more efficiently and safely.</p>
         <h3 class="fs-600 fw-bold">Future Upgrades</h3>
         <p>In the first few updates, we would see bug fixes and improvements made to the user interface design of the
           application and any other small details that users believe would benefit the application. After 6-12 months, we would
           see more features added to the application, such as a set/rep counter. The application will also be able to suggest
           either increasing or decreasing weight from an exercise depending on how long it takes the user to complete the
-          exercise.<br />
-          After a year of being online, more features will be available in the application, such as alerting the user about
+          exercise.</p>
+        <p>After a year of being online, more features will be available in the application, such as alerting the user about
           their form and exercise intensity. This will be done through cross-platform capabilities, where the application can
-          link to a smartwatch and access information such as blood-oxygen levels and heart rate.<br />
-          The final features will let the application provide users with a workout plan and meal plan, depending on whether the
+          link to a smartwatch and access information such as blood-oxygen levels and heart rate.</p>
+        <p>The final features will let the application provide users with a workout plan and meal plan, depending on whether the
           user would like to gain or lose weight. The application will also have a database of many foods and their breakdown of
-          calories, sugars, fats etc. All the user will have to do is enter the food name in the database, find it, and add it
-          to their meal plan to be able to view a breakdown. </p>
+          calories, sugars, fats etc. All the users will have to do is enter the food name in the database, find it, and add it
+          to their meal plan to be able to view a breakdown.</p>
       </div>
     </section>
 
@@ -174,7 +162,7 @@
             <a href="#"><img src="/images/RMIT_University_Logo_Inverted.svg" alt="RMIT"
                 class="rmit-logo footer-rmit-logo"></a>
           </div>
-          <p>Intro to IT Assessment 2 Group # 9</p>
+          <p>IIT Assessment 2 Group 9: The Interstaters</p>
         </div>
         <div>
           <nav class="footer-nav">

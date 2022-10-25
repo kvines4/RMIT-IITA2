@@ -161,6 +161,32 @@ strong {
   }
 }
 
+.table-border {
+  border-collapse: collapse;
+}
+
+.table-border td {
+  border: 1px solid black;
+}
+
+blockquote {
+  margin: 0 1em;
+  font-style: italic !important;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+.block-quote-author {
+  margin-right: 3em;
+  text-align: right;
+}
+
 /* button */
 
 .button {
@@ -598,6 +624,22 @@ input:where([type="text"], [type="email"], ) {
   background-color: var(--clr-neutral-900);
 }
 
+
+
+.bg-green {
+  background-color: lightgreen;
+}
+.bg-orange {
+  background-color: lightsalmon;
+}
+.bg-yellow {
+  background-color: lightgoldenrodyellow;
+}
+.bg-blue {
+  background-color: lightskyblue;
+}
+
+
 .fw-bold {
   font-weight: var(--fw-bold);
 }
@@ -662,6 +704,10 @@ input:where([type="text"], [type="email"], ) {
 
 .margin-bottom-700 {
   margin-block-end: var(--size-700);
+}
+
+.margin-top-400 {
+  margin-block-start: var(--size-400);
 }
 
 .margin-bottom-400 {
